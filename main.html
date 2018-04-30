@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="main_files/materialize.css" rel="stylesheet">
+	<link href="main_files/style.css" rel="stylesheet">
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+		*{
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none; 
+	margin:auto;
+	padding:0;
+	
+	}
+        body{
+        	
+			background-image: url("images/oo2.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+	margin:auto;
+        }
+		#loader{
+			width:100%;
+			height:100%;
+			position:absolute;
+			z-index:10001;
+			background-color:#ffffff;
+			opacity:0.8;
+			}
+		#loader2{
+			width:100%;
+			height:100%;
+			position:absolute;
+			z-index:10001;
+			background-color:#ffffff;
+			opacity:0.8;
+			}
+    </style>
+    <script src="cordova.js"></script>
+	<script>
+	
+	var win_h = $(window).height();
+	alert(win_h);
+	var win_w = $(window).width();
+	$("#loader").css('height',win_h).css('width',win_w);
+	$("#loader2").css('height',win_h).css('width',win_w);
+	</script>
+	<script>
+	window.addEventListener('load',function(){
+		var loader = document.getElementById("loader");
+		document.body.removeChild(loader);
+	});
+	$(document).ready(function(){
+	$(".loads").click(function(){
+			$("#loader2").show();
+			});
+		$('.hideside').click(function(){
+			$('.button-collapse').sideNav('hide');
+		});
+});
+
+	</script>
+</head>
+
+<body>
+	
+	<div id="loader2" style="display:none;">
+		<center>
+			<img style="margin-top:55%;" src="main_files/wheel.gif" width="auto" height="40">
+		</center>
+	</div>
+	<script src="main_files/jquery.js"></script>
+	<script src="main_files/materialize.js"></script>
+	<script src="main_files/javascript.js"></script>
+	<script>  
+	$(document).ready(function(){
+		$('select').material_select();
+		$('.button-collapse').sideNav({menuWidth: 240 ,edge: 'left',closeOnClick: true});
+	});
+	</script>
+	
+	<header id="header">
+		<div data-activates="slide-out" class="button-collapse himg waves-effect waves-light" id="himg" height="20" width="20">
+		<img src="main_files/appbar.png" width="40" height="50">		
+		</div>	
+		<p style="color:#FFFFFF;padding-top:14px;padding-left:20px;font-size:15px;">Stacked Track</p>
+
+			<a href="javascript:;" class="#loads"><img src="main_files/appbar_002.png" id="himg2" width="auto" height="35"></a>
+
+	</header><br>
+	<img src="main_files/view2.png" style="border-bottom:4px solid #01B1E2;z-index:-2;" width="100%" height=""><br><br>
+	<ul style="width: 240px; transform: translateX(-100%);" id="slide-out" class="side-nav">
+	  <li><a href="#%21"><img src="main_files/pass.png" width="" height="20"><span style="color:#01B1E2;font-size:14px;padding-left:10px;">Student Info</span><img src="main_files/pass.png" width="" height="20"></a></li><br>
+	  <center>
+			<img src="main_files/splash.png" width="auto" height="65px">
+	  </center><br>
+	  <li style="border-bottom:2px solid #01B1E2;border-top:2px solid #01B1E2;" class="hideside si"><a href="javascript:;" class=""><img style="margin-top:13px;position:absolute;" src="main_files/stud.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">Student Info</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	  <li style="border-bottom:2px solid #01B1E2;"><a href="javascript:;" class="hideside res"><img style="margin-top:13px;position:absolute;" src="main_files/result.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">Result</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	  <li style="border-bottom:2px solid #01B1E2;"><a href="javascript:;" class="hideside fee"><img style="margin-top:13px;position:absolute;" src="main_files/fee.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">School Fee</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	  <li style="border-bottom:2px solid #01B1E2;"><a href="javascript:;" class="hideside att"><img style="margin-top:13px;position:absolute;" src="main_files/att.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">Attendance</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	  <li style="border-bottom:2px solid #01B1E2;"><a href="javascript:;" class="hideside eve"><img style="margin-top:13px;position:absolute;" src="main_files/event.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">Events</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	  <li style="border-bottom:2px solid #01B1E2;"><a href="javascript:;" class="hideside msg"><img style="margin-top:13px;position:absolute;" src="main_files/inbox.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">Inbox</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	  <li style="border-bottom:2px solid #01B1E2;"><a href="javascript:;" class="hideside sfa"><img style="margin-top:13px;position:absolute;" src="main_files/send.png" width="" height="20"><span style="position:absolute;color:#01B1E2;font-size:12px;padding-left:35px;">Send Message</span><img style="float:right;margin-top:20px;" src="main_files/poi.png" width="" height="10px"></a></li>
+	 
+    </ul>
+<center>
+<div class="row"><div class="col-lg-4"></div><div class="col-lg-4"><div style="margin-top:-75px;position:relative;width:97px;height:97px;background:url(main_files/studd.png);background-size: 100% 100%;background-repeat: no-repeat;background-color:#FFFFFF;border:4px solid #01B1E2;border-radius:100%;"></div></div><div class="col-lg-4"></div></div>	<div id="studentinfo" style="">
+		<div class="row">
+						<div class="col s1"></div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Surname</p>legend</div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Firstname</p>legend</div>
+						<div class="col s1"></div>
+				  </div><div class="row">
+						<div class="col s1"></div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Middlename</p>legend</div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Gender</p>male</div>
+						<div class="col s1"></div>
+				  </div><div class="row">
+						<div class="col s1"></div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Date of Birth</p>12-12-2012</div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Class</p>jss1</div>
+						<div class="col s1"></div>
+				  </div><div class="row">
+						<div class="col s1"></div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Phone number</p>57678909789</div>
+						<div class="col s5 truncate" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Address</p>kujbjkjn</div>
+						<div class="col s1"></div>
+				  </div><div class="row">
+						<div class="col s1"></div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Admission Mode</p>Day</div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Session</p>first term, 2017</div>
+						<div class="col s1"></div>
+				  </div><div class="row">
+						<div class="col s1"></div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Username</p>legend</div>
+						<div class="col s5" style="font-size:12px;border-bottom:2px solid #01B1E2;"><p style="font-size:12px;color:#01B1E2;">Password</p>legend</div>
+						<div class="col s1"></div>
+				  </div>	</div>
+</center>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<center>
+	<div id="result" style="display:none;"><br>
+	<div class="divider"></div>
+	<p style="color:#01B1E2;text-size:20px;"><b>RESULTS</b></p>
+	<div class="divider"></div>
+<div class="row"><div class="col s5 m5 l5"><p><b>Session:</b></p></div><div class="col s7 m7 l7"><p style="color:#01B1E2;word-wrap: break-word;">first term, 2017</p></div><b>Result</b><p style="color:#01B1E2;word-wrap: break-word;max-width:300px;">English         ( )   Mathematics   ( )   Chemistry             ( )
+Physics         ( )   Biology           ( )    Agric. sc              ( )
+Geograph     ( )   Economics      ( )    Further Math.      ( )
+Government ( )   Literature        ( )    Religious Lang    ( )
+Music            ( )  Commerce       ( )    Accounting          ( )</p><div class="divider"></div></div><div class="row"></div>		
+	</div>
+</center>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<center>
+	<div id="fee" style="display:none;"><br>
+	<div class="divider"></div>
+	<p style="color:#01B1E2;text-size:20px;"><b>SCHOOL FEE</b></p>
+	<div class="divider"></div>
+<table class="responsive-table"><thead>
+      <tr>
+        <th>SESSION</th>
+        <th>FEE PAID</th>
+        <th>BALANCE</th>
+      </tr>
+    </thead><tbody><tr><td><p style="color:#01B1E2;word-wrap: break-word;">first term, 2017</p></td><td><p style="color:#01B1E2;word-wrap: break-word;">N 8000</p></td><td><p style="color:#01B1E2;word-wrap: break-word;">N 2000</p></td></tr></tbody></table>	</div>
+</center>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<center>
+	<div id="msg" style="display:none"><br>
+	<p style="color:#01B1E2;text-size:20px;"><b>GENERAL MESSAGE</b></p>
+<div class="row"><br><br><br><p style="color:#01B1E2;text-size:20px;"><b>PERSONAL MESSAGE</b></p><div class="row">	</div>
+</div></div></center>	
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<center>
+	<div id="eve" style="display:none"><br>
+	<div class="divider"></div>
+	<p style="color:#01B1E2;text-size:20px;"><b>SCHOOL EVENTS</b></p>
+	<div class="divider"></div><br>
+
+<div class="row"></div>	</div>
+</center>	
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<center>
+	<div id="att" style="display:none">
+	<div class="divider"></div><br>
+	<p style="color:#01B1E2;text-size:20px;"><b>ATTENDANCE</b></p>
+	<div class="divider"></div>
+<table class="responsive-table"><thead>
+      <tr>
+        <th>WEEK RANGE</th>
+        <th>DAYS ATTENDED</th>
+      </tr>
+    </thead><tbody><tr><td><p style="color:#01B1E2;word-wrap: break-word;">20-25 September, 2017</p></td><td><p style="color:#01B1E2;word-wrap: break-word;">2</p></td></tr></tbody></table>	</div>
+</center>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<div id="sfa" style="display:none">
+	<div class="divider"></div><br>
+		<center>
+	<p style="color:#01B1E2;text-size:20px;"><b>SEND MESSAGE TO ADMIN</b></p>
+		</center>
+	<div class="divider"></div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	document.getElementById("sndmsg").addEventListener("click", function(){
+		
+		var subject = $('#subject').val();
+		var message = $('#message').val();
+		if(subject != '' && message != ''){
+			$('#sndmsg').attr('disabled','disabled');
+		$.ajax({
+			type: "POST",
+			url: "msgadm.php",
+			data: { 
+				subject: subject, message: message
+			}
+			}).success(function(data) {
+				$('#resultter').html(data);
+				var subject = $('#subject').val('');
+				var message = $('#message').val('');
+		   		$('#sndmsg').removeAttr("disabled");
+		   		delay(2000);
+		   		$('#resultter').html(' ');
+
+			});
+		}
+		else{
+			alert('fill all the fields')
+		}
+		});
+	});
+</script>
+		<div class="row">
+			<div class="col s2"></div>
+			<div class="input-field col s8">
+			  <input id="subject" style=" border-bottom: 1px solid #01B1E2;box-shadow: 0 1px 0 0 #01B1E2;color: #01B1E2;" class="validate" type="text">
+			  <label for="subject" style=" color: #01B1E2;">Subject</label>
+			</div>
+			<div class="col s2"></div>
+		</div>
+		<div class="row">
+			<div class="col s2"></div>
+			<div class="input-field col s8">
+			  <textarea id="message" style=" border-bottom: 1px solid #01B1E2;box-shadow: 0 1px 0 0 #01B1E2;color: #01B1E2;text-align:center;" class="materialize-textarea"></textarea>
+			  <label for="message" style=" color: #01B1E2;">Message</label>
+			  <center><div id="resultter" style="color:green;"></div></center>
+			</div>
+			<div class="col s2"></div>
+		</div>
+			<center>
+				
+				<button class="waves-effect waves-light btn-large" style=" background-color:#01B1E2;" id="sndmsg" type="button">Send</button>
+			</center>
+	</div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<br><br>
+
+
+<div class="hiddendiv common"></div><div style="left: 0px;" class="drag-target"></div></body></html>

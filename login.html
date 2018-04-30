@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="login_files/materialize.css" rel="stylesheet">
+	<link href="login_files/style.css" rel="stylesheet">
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+		body{
+    background-image: url("images/o.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+	margin:auto;
+	}
+		#loader{
+			width:100%;
+			height:100%;
+			position:absolute;
+			z-index:10001;
+			background-color:#ffffff;
+			}
+		#loader2{
+			width:100%;
+			height:100%;
+			position:absolute;
+			z-index:10001;
+			background-color:#ffffff;
+			opacity:0.8;
+			}
+    </style>
+    <script src="cordova.js"></script>
+	<script>
+	window.addEventListener('load',function(){
+		var loader = document.getElementById("loader");
+		document.body.removeChild(loader);
+	});
+	</script>
+	<script src="login_files/javascript.js"></script>
+</head>
+
+<body>
+	
+	<div id="loader2" style="display:none;">
+		<center>
+			<img style="margin-top:60%;" src="login_files/wheel.gif" width="auto" height="40">
+		</center>
+	</div>
+	<script src="login_files/jquery.js"></script>
+	<script src="login_files/materialize.js"></script>
+	<script src="login_files/javascript.js"></script>
+	<script src="login_files/jquery.js"></script>
+	<!--header id="header" style='-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;'>
+<img src="images/appbar.home.garage.png" data-activates="slide-out" class="button-collapse himg " id="himg" height="35" width="auto" />		
+			<p style='color:#FFFFFF;padding-top:12px;padding-left:20px;font-size:15px;'>StackedTrack</p>
+	</header-->
+	<br><br><br><br>
+
+
+
+	
+<center>
+	<p style="color:#01B1E2;font-size:22px;font-family:;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;">Login</p><br>
+
+		<div class="row">
+			<div class="col s2"></div>
+			<div class="input-field col s8">
+			  <i class="material-icons prefix"><img src="login_files/user2.png" width="" height="40"></i>
+			  <input id="icon_telephone" style=" border-bottom: 1px solid #01B1E2;box-shadow: 0 1px 0 0 #01B1E2;color: #01B1E2;" name="user_login" class="validate tele" type="text">
+			  <label for="icon_telephone" style=" color: #01B1E2;">Username</label>
+			</div>
+			<div class="col s2"></div>
+		</div>
+		<div class="row">
+			<div class="col s2"></div>
+			<div class="input-field col s8">
+			  <i class="material-icons prefix"><img src="login_files/pass.png" width="" height="40"></i>
+			  <input id="icon_telephone" style=" border-bottom: 1px solid #01B1E2;box-shadow: 0 1px 0 0 #01B1E2;color: #01B1E2;" name="password_login" class="validate passy" type="password">
+			  <label for="icon_telephone" style=" color: #01B1E2;">Password</label>
+			</div>
+			<div class="col s2"></div>
+		</div>			
+	<button class="waves-effect waves-light btn-large #loads ppp" id="cagain" style=" background-color:#01B1E2;" name="button" type="button">Login</button>
+</center>
+<script type="text/javascript">
+
+</script>
+<br><br><br><br>
+<p style="text-align:center;color:#01B1E2;font-family:cursive;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;">A StackedHub Technology</p>
+</body></html>
